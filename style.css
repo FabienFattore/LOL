@@ -1,0 +1,29 @@
+:root {
+    --principal-color :#111111;
+    --text-header: #d8bb6d;
+}
+
+body {
+    margin: 0;
+    background-image: url(assets/img/fond.jpeg);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--principal-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+}
+
+header > a {
+    text-decoration: none;
+    color: var(--text-header);
+}
+
+header img {
+    width: 15%;
+    padding: 0.5%;
+}
