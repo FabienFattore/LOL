@@ -4,6 +4,7 @@
     --hover-text-header : #e0cc93;
     --cards-color : linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(73,73,73,1) 86%, rgba(134,134,134,1) 100%);
     --card-hover : linear-gradient(90deg, rgba(180,140,34,1) 0%, rgba(216,187,109,1) 33%, rgba(227,209,160,1) 74%);
+    --input-back : #2f2f2f;
 }
 
 body {
@@ -120,6 +121,25 @@ main {
 
 }
 
+/* barre de recherche */
+
+.search-name {
+    position: fixed;
+    top: 165px;
+    right: 519px;
+}
+
+.search-name input {
+    width: 200px;
+    height: 30px;
+    color: var(--text-header);
+    align-items: center;
+    padding-left: 5%;
+    background-color: var(--principal-color);
+    border-radius: 8px;
+    border: solid 2px var(--text-header);
+}
+
 /* Statistiques */ 
 
 .stats {
@@ -128,10 +148,10 @@ main {
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    width: 720px;
-    height: 765px;
+    width: 700px;
+    height: 720px;
     background-color: var(--principal-color);
-    top: 166px;
+    top: 212px;
     right: 20px;
     border-radius: 20px;
     border: solid 2px var(--text-header);
@@ -139,7 +159,7 @@ main {
 
 .bio {
     text-align: justify;
-    background-color: #2f2f2f;
+    background-color: var(--input-back);
     padding: 2%;
     border-radius: 7px;
     border: solid 2px var(--text-header);

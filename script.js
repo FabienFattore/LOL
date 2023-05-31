@@ -1,3 +1,5 @@
+const input = document.getElementById('search')
+
 fetch('http://ddragon.leagueoflegends.com/cdn/13.10.1/data/fr_FR/champion.json')
     .then(response => response.json())
     .then(data => {
@@ -10,6 +12,7 @@ fetch('http://ddragon.leagueoflegends.com/cdn/13.10.1/data/fr_FR/champion.json')
             const image = champion.image.full
             const bio = champion.blurb
             const title = champion.title
+            let search = ''
 
             // Création de la div "card" pour le champion
 
@@ -32,15 +35,38 @@ fetch('http://ddragon.leagueoflegends.com/cdn/13.10.1/data/fr_FR/champion.json')
             // Ajout de la div "card" au conteneur des cartes
 
             championCardsContainer.appendChild(championCard)
+            document.getElementsByClassName('title-bio')[0].innerText = ` "${title}" `
+            document.getElementsByClassName('nom-bio')[0].innerText = name
+            document.getElementsByClassName('bio')[0].innerText = bio
+            document.getElementById('img-bio').src = championImage.src    
 
-            championCard.addEventListener('click', e => {
-                document.getElementsByClassName('title-bio')[0].innerText = ' " ' + title + ' " '
+            championCard.addEventListener('click', () => {
+                document.getElementsByClassName('title-bio')[0].innerText = ` "${title}" `
                 document.getElementsByClassName('nom-bio')[0].innerText = name
                 document.getElementsByClassName('bio')[0].innerText = bio
                 document.getElementById('img-bio').src = championImage.src
                 console.log(bio)
             })
         })
+
+        input.addEventListener('input', trouverChampion)
+
+        function trouverChampion() {
+            search = this.value
+            console.log(search)
+            filtrerChampion()
+        }
+
+        function filtrerChampion() {
+            Array.from(championCardsContainer.children).forEach(champion => {
+                const name = champion.querySelector('h2').innerText
+                if (name.toLowerCase().includes(search)) {
+                    champion.style.display = 'flex'
+                } else {
+                    champion.style.display = 'none'
+                }
+            })
+        }
     })
     .catch(error => {
         console.log(error)
