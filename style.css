@@ -20,6 +20,9 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
     border-bottom: solid 2px var(--text-header);
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 /* Partie gauche */
@@ -65,4 +68,38 @@ header img {
     color: var(--hover-text-header);
 }
 
+/* Champions */
 
+main {
+    margin-top: 8%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--principal-color);
+    margin: 0.5%;
+    padding: 0.5%;
+    border-radius: 3%;
+    border: solid 2px var(--text-header);
+    width: 10%;
+}
+
+.card h2 {
+    color: var(--text-header);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+.card img {
+    width: 100%;
+}
