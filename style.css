@@ -9,6 +9,7 @@
 }
    
 body {
+    font-family: url(fonts/BeaufortforLOL-Regular.otf);
     cursor:url('assets/img/cursor.png'), auto;
     margin: 0;
     background-image: url(assets/img/fond.jpeg);
@@ -25,7 +26,6 @@ header {
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--principal-color);
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
     border-bottom: solid 1px var(--text-header);
     position: fixed;
@@ -114,7 +114,6 @@ main {
 
 .card h2 {
     color: var(--text-header);
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
 }
 
@@ -142,6 +141,13 @@ main {
     background-color: var(--principal-color);
     border-radius: 8px;
     border: solid 1px var(--text-header);
+}
+
+.logo-L {
+    position: fixed;
+    width: 60px;
+    top: 151px;
+    right: 480px;
 }
 
 /* Statistiques champion */ 
@@ -203,6 +209,13 @@ main {
     top: 13px;
 }
 
+.yasuo {
+    width: 105px;
+    position: fixed;
+    right: 10px;
+    top: 13px;
+}
+
 /* Cartes des items */
 
 .items {
@@ -237,7 +250,6 @@ main {
 
 .i-card h2 {
     color: var(--text-header);
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
 }
 
