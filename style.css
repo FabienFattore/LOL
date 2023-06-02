@@ -122,7 +122,7 @@ main {
 
 }
 
-/* barre de recherche */
+/* barre de recherche champions */
 
 .search-name {
     position: fixed;
@@ -244,6 +244,25 @@ main {
     width: 80%;
 }
 
+/* barre de recherche items */
+
+.search-item {
+    position: fixed;
+    top: 165px;
+    right: 519px;
+}
+
+.search-item input {
+    width: 200px;
+    height: 30px;
+    color: var(--text-header);
+    align-items: center;
+    padding-left: 5%;
+    background-color: var(--principal-color);
+    border-radius: 8px;
+    border: solid 2px var(--text-header);
+}
+
 /* Statistiques items */ 
 
 .item-des {
@@ -268,7 +287,7 @@ main {
     border-radius: 7px;
     border: solid 2px var(--text-header);
     width: 500px;
-    height: 85px;
+    height: 40px;
     color: var(--text-header);
 }
 
