@@ -4,7 +4,7 @@
     --text-header: #c89b3c;
     --hover-text-header : #e0cc93;
     --cards-color : linear-gradient(90deg, #010a13 0%, rgba(73,73,73,1) 86%, rgba(134,134,134,1) 100%);
-    --card-hover : linear-gradient(90deg, #c89b3c 0%, rgba(216,187,109,1) 33%, rgba(227,209,160,1) 74%);
+    --card-hover : linear-gradient(90deg, rgba(184,143,35,1) 33%, rgba(119,101,57,1) 75%, rgba(227,209,160,1) 87%);
     --input-back : #2f2f2f;
 }
    

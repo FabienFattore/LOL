@@ -1,6 +1,6 @@
 const input = document.getElementById('search-i')
 
-fetch('http://ddragon.leagueoflegends.com/cdn/13.10.1/data/fr_FR/item.json')
+fetch('http://ddragon.leagueoflegends.com/cdn/13.11.1/data/fr_FR/item.json')
     .then(response => response.json())
     .then(data => {
         const items = data.data
@@ -24,7 +24,7 @@ fetch('http://ddragon.leagueoflegends.com/cdn/13.10.1/data/fr_FR/item.json')
             let itemImgElement = document.createElement('img')
 
             itemNameElement.textContent = itemName
-            itemImgElement.src = `http://ddragon.leagueoflegends.com/cdn/13.10.1/img/item/${itemImg}`
+            itemImgElement.src = `http://ddragon.leagueoflegends.com/cdn/13.11.1/img/item/${itemImg}`
 
             // Ajout des éléments à la div "i-card"
 
@@ -42,7 +42,6 @@ fetch('http://ddragon.leagueoflegends.com/cdn/13.10.1/data/fr_FR/item.json')
                 document.getElementsByClassName('item-bio')[0].innerText = itemName
                 document.getElementById('img-item-bio').src = itemImgElement.src
                 document.getElementsByClassName('i-bio')[0].innerText = itemDescription
-                console.log(itemDescription)
             })
         })
 

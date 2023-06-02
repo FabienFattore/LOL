@@ -1,6 +1,6 @@
 const input = document.getElementById('search')
 
-fetch('http://ddragon.leagueoflegends.com/cdn/13.10.1/data/fr_FR/champion.json')
+fetch('http://ddragon.leagueoflegends.com/cdn/13.11.1/data/fr_FR/champion.json')
     .then(response => response.json())
     .then(data => {
         const champions = data.data
@@ -25,7 +25,7 @@ fetch('http://ddragon.leagueoflegends.com/cdn/13.10.1/data/fr_FR/champion.json')
             let championImage = document.createElement('img')
 
             championName.innerText = name
-            championImage.src = `http://ddragon.leagueoflegends.com/cdn/13.10.1/img/champion/${image}`
+            championImage.src = `http://ddragon.leagueoflegends.com/cdn/13.11.1/img/champion/${image}`
 
             // Ajout des éléments à la div "card"
 
