@@ -3,16 +3,19 @@
     --principal-color :#010a13;
     --text-header: #c89b3c;
     --hover-text-header : #e0cc93;
-    --cards-color : linear-gradient(90deg, #010a13 0%, rgba(73,73,73,1) 86%, rgba(134,134,134,1) 100%);
+    --cards-color : linear-gradient(90deg, #010a13 33%, rgba(73,73,73,1) 75%, rgba(134,134,134,1) 87%);
     --card-hover : linear-gradient(90deg, rgba(184,143,35,1) 33%, rgba(119,101,57,1) 75%, rgba(227,209,160,1) 87%);
     --input-back : #2f2f2f;
 }
    
 body {
+    cursor:url('assets/img/cursor.png'), auto;
     margin: 0;
     background-image: url(assets/img/fond.jpeg);
     background-attachment: fixed;
 }
+
+a:hover, button:hover {cursor : url('assets/img/cursor.png'), auto;}
 
 /* Header */
 
@@ -24,7 +27,7 @@ header {
     background-color: var(--principal-color);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
-    border-bottom: solid 2px var(--text-header);
+    border-bottom: solid 1px var(--text-header);
     position: fixed;
     width: 100%;
     top: 0;
@@ -96,7 +99,7 @@ main {
     margin: 1.2%;
     padding: 0.8%;
     border-radius: 3%;
-    border: solid 2px var(--text-header);
+    border: solid 1px var(--text-header);
     width: 15%;
     box-shadow: 5px 5px 20px gray;
 }
@@ -118,7 +121,7 @@ main {
 .card img {
     border: solid 1px var(--text-header);
     border-radius: 10px;
-    width: 95%;
+    width: 90%;
 
 }
 
@@ -138,7 +141,7 @@ main {
     padding-left: 5%;
     background-color: var(--principal-color);
     border-radius: 8px;
-    border: solid 2px var(--text-header);
+    border: solid 1px var(--text-header);
 }
 
 /* Statistiques champion */ 
@@ -155,7 +158,7 @@ main {
     top: 212px;
     right: 20px;
     border-radius: 20px;
-    border: solid 2px var(--text-header);
+    border: solid 1px var(--text-header);
 }
 
 .bio {
@@ -163,7 +166,7 @@ main {
     background-color: var(--input-back);
     padding: 2%;
     border-radius: 7px;
-    border: solid 2px var(--text-header);
+    border: solid 1px var(--text-header);
     width: 500px;
     height: 85px;
     color: var(--text-header);
@@ -177,7 +180,7 @@ main {
 .champ-bio img {
     width: 200px;
     border-radius: 20px;
-    border: solid 2px var(--text-header);
+    border: solid 1px var(--text-header);
     margin: 5%;
 }
 
@@ -219,9 +222,9 @@ main {
     margin: 1.2%;
     padding: 0.8%;
     border-radius: 3%;
-    border: solid 2px var(--text-header);
-    width: 15%;
-    box-shadow: 5px 5px 20px gray;
+    border: solid 1px var(--text-header);
+    width: 12%;
+    box-shadow: 3px 3px 10px gray;
 }
 
 .i-card:hover {
@@ -260,7 +263,7 @@ main {
     padding-left: 5%;
     background-color: var(--principal-color);
     border-radius: 8px;
-    border: solid 2px var(--text-header);
+    border: solid 1px var(--text-header);
 }
 
 /* Statistiques items */ 
@@ -277,7 +280,7 @@ main {
     top: 212px;
     right: 20px;
     border-radius: 20px;
-    border: solid 2px var(--text-header);
+    border: solid 1px var(--text-header);
 }
 
 .i-bio {
@@ -285,9 +288,9 @@ main {
     background-color: var(--input-back);
     padding: 2%;
     border-radius: 7px;
-    border: solid 2px var(--text-header);
+    border: solid 1px var(--text-header);
     width: 500px;
-    height: 40px;
+    height: 25px;
     color: var(--text-header);
 }
 
