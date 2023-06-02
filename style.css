@@ -1,12 +1,13 @@
+
 :root {
-    --principal-color :#091428;
+    --principal-color :#010a13;
     --text-header: #c89b3c;
     --hover-text-header : #e0cc93;
-    --cards-color : linear-gradient(90deg, #091428 0%, rgba(73,73,73,1) 86%, rgba(134,134,134,1) 100%);
+    --cards-color : linear-gradient(90deg, #010a13 0%, rgba(73,73,73,1) 86%, rgba(134,134,134,1) 100%);
     --card-hover : linear-gradient(90deg, #c89b3c 0%, rgba(216,187,109,1) 33%, rgba(227,209,160,1) 74%);
     --input-back : #2f2f2f;
 }
-
+   
 body {
     margin: 0;
     background-image: url(assets/img/fond.jpeg);
@@ -140,7 +141,7 @@ main {
     border: solid 2px var(--text-header);
 }
 
-/* Statistiques */ 
+/* Statistiques champion */ 
 
 .stats {
     display: flex;
@@ -189,3 +190,101 @@ main {
     font-size: 1em;
     color: var(--text-header);
 }
+
+/* vidéo */
+
+.poro {
+    width: 100px;
+    position: fixed;
+    left: 10px;
+    top: 13px;
+}
+
+/* Cartes des items */
+
+.items {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.i-card {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--cards-color);
+    margin: 1.2%;
+    padding: 0.8%;
+    border-radius: 3%;
+    border: solid 2px var(--text-header);
+    width: 15%;
+    box-shadow: 5px 5px 20px gray;
+}
+
+.i-card:hover {
+    background: var(--card-hover);
+}
+
+.i-card:hover h2 {
+    color: var(--principal-color);
+}
+
+.i-card h2 {
+    color: var(--text-header);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+}
+
+.i-card img {
+    border: solid 1px var(--text-header);
+    border-radius: 10px;
+    width: 80%;
+}
+
+/* Statistiques items */ 
+
+.item-des {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 700px;
+    height: 720px;
+    background-color: var(--principal-color);
+    top: 212px;
+    right: 20px;
+    border-radius: 20px;
+    border: solid 2px var(--text-header);
+}
+
+.i-bio {
+    text-align: justify;
+    background-color: var(--input-back);
+    padding: 2%;
+    border-radius: 7px;
+    border: solid 2px var(--text-header);
+    width: 500px;
+    height: 85px;
+    color: var(--text-header);
+}
+
+.item-bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item-bio-img img {
+    width: 200px;
+    border-radius: 20px;
+    border: solid 2px var(--text-header);
+    margin: 5%;
+}
+
+.item-bio {
+    font-size: 2.5em;
+    color: var(--text-header);
+} 

@@ -32,7 +32,7 @@ fetch('http://ddragon.leagueoflegends.com/cdn/13.10.1/data/fr_FR/champion.json')
             championCard.appendChild(championName)
             championCard.appendChild(championImage)
 
-            // Ajout de la div "card" au conteneur des cartes
+            // Ajout des elements stats dans la div stats
 
             championCardsContainer.appendChild(championCard)
             document.getElementsByClassName('title-bio')[0].innerText = ` "${title}" `
@@ -45,7 +45,7 @@ fetch('http://ddragon.leagueoflegends.com/cdn/13.10.1/data/fr_FR/champion.json')
                 document.getElementsByClassName('nom-bio')[0].innerText = name
                 document.getElementsByClassName('bio')[0].innerText = bio
                 document.getElementById('img-bio').src = championImage.src
-                console.log(bio)
+                console.log(champion)
             })
         })
 
@@ -53,7 +53,6 @@ fetch('http://ddragon.leagueoflegends.com/cdn/13.10.1/data/fr_FR/champion.json')
 
         function trouverChampion() {
             search = this.value
-            console.log(search)
             filtrerChampion()
         }
 
