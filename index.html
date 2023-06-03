@@ -11,40 +11,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>League of Legends</title>
 </head>
+
 <body>
-<header>
-    <div class="left">
-        <a href="index.html">CHAMPIONS</a>
-        <a href="compt.html">COMPETENCES</a>
-        <a href="Items.html">ITEMS</a>
-    </div>
-    <img src="assets/img/logo.png" alt="">
-    <div class="right">
-        <a href="">MODE CHAMPION</a>
-        <a href="">MODE COMPETENCE</a>
-        <a href="">MODE ITEM</a>
-    </div>
-    <video class="poro" src="assets/vid/Poro_base_AN_idle3.mp4" autoplay="" loop="" playsinline=""></video>
-    <video class="yasuo" src="assets/vid/Yasuo_Idle2.mp4" autoplay="" loop="" playsinline=""></video>
-</header>
-
-<main>
-    <div class="cards" id="championCards"></div>
-    <div class="search-name"><input id="search" type="text" placeholder="recherche"></div>
-    <img src="assets/img/logo-L.png" alt="" class="logo-L">
-    <div class="stats">
-        
-        <div class="champ-bio">
-            <div class="title-bio"></div>
-            <div class="nom-bio"></div>
-            <div><img id="img-bio" alt=""></div>
-            <div class="bio"></div>
+    <header>
+        <div class="left">
+            <a href="index.html">CHAMPIONS</a>
+            <a href="compt.html">COMPETENCES</a>
+            <a href="Items.html">ITEMS</a>
         </div>
-        
-    </div>
-</main>
+        <img src="assets/img/logo.png" alt="">
+        <div class="right">
+            <a href="">MODE CHAMPION</a>
+            <a href="">MODE COMPETENCE</a>
+            <a href="">MODE ITEM</a>
+        </div>
+        <video class="poro" src="assets/vid/Poro_base_AN_idle3.mp4" autoplay="" loop="" playsinline=""></video>
+        <video class="yasuo" src="assets/vid/Yasuo_Idle2.mp4" autoplay="" loop="" playsinline=""></video>
+    </header>
 
+    <main>
+        <div class="cards" id="championCards"></div>
+        <div class="search-name"><input id="search" type="text" placeholder="recherche"></div>
+        <img src="assets/img/logo-L.png" alt="" class="logo-L">
+        <div class="stats">
 
+            <div class="champ-bio">
+                <div class="title-bio"></div>
+                <div class="nom-bio"></div>
+                <div><img id="img-bio" alt=""></div>
+                <div class="bio"></div>
+            </div>
+            <div class="graph">
+                <div class="graph"><canvas id="myChart"></canvas></div>
+            </div>
+
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 
